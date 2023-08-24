@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Painel de Administração</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/jpg" href="image/pesquisa.png"/>
+
+    <!-- Montserrat Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+
+    <div class="grid-container">
+
+      <!-- Header -->
+      <header class="header">
+        <div class="menu-icon" onclick="openSidebar()">
+          <span class="material-icons-outlined">menu</span>
+        </div>
+        <div class="header-left">
+          
+        </div>
+        <div class="header-right">
+          <img class="icon" src="https://th.bing.com/th/id/R.9f46479d9f16fdafa525132acbcfca77?rik=dOIg1zVhtrFnOw&pid=ImgRaw&r=0" alt="Ícone">
+          <span class="material-icons-outlined"></span>
+          <span class="material-icons-outlined"></span>
+        </div>
+      </header>
+      <!-- End Header -->
+
+      <!-- Sidebar -->
+      <aside id="sidebar">
+        <div class="sidebar-title">
+          <div class="sidebar-brand">
+            <span class="material-icons-outlined">face  </span>Autores
+          </div>
+          <span class="material-icons-outlined" onclick="closeSidebar()"
+            >close</span
+          >
+        </div>
+        <ul class="sidebar-list">
+          <li class="sidebar-list-item">
+            <span>José Ruan Pontes Frazão</span>
+          </li>
+          <li class="sidebar-list-item">
+            
+          </li>
+          <li class="sidebar-list-item">
+            
+          </li>
+          <li class="sidebar-list-item">
+            
+          </li>
+          <li class="sidebar-list-item">
+            
+          </li>
+          <li class="sidebar-list-item">
+            
+          </li>
+          <li class="sidebar-list-item">
+            
+          </li>
+        </ul>
+      </aside>
+      <!-- End Sidebar -->
+
+      <!-- Main -->
+      <main class="main-container">
+        <div class="main-title">
+          <h2>Inicio</h2>
+        </div>
+
+        <div class="main-cards">
+          <div class="card">
+            <div class="card-inner">
+              <h3>Repostas Coletadas</h3>
+              <span class="material-icons-outlined">gmail</span>
+            </div>
+            <h1>249</h1>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <h3>Perguntas</h3>
+              <span class="material-icons-outlined">category</span>
+            </div>
+            <h1>10</h1>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <h3>Participantes</h3>
+              <span class="material-icons-outlined">groups</span>
+            </div>
+            <h1>45</h1>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <h3></h3>
+              <span class="material-icons-outlined"></span>
+            </div>
+            <h1></h1>
+          </div>
+
+        </div>
+
+        <div class="charts">
+
+          <div class="charts-card">
+            <h2 class="chart-title">Média das respostas</h2>
+            <div id="bar-chart"></div>
+          </div>
+
+          <div class="charts-card">
+            <h2 class="chart-title">Exemplo de outro gráfico</h2>
+            <div id="area-chart"></div>
+          </div>
+
+        </div>
+      </main>
+      <!-- End Main -->
+    </div>
+
+    <!-- Scripts -->
+    <!-- ApexCharts -->
+    <script
+      src =
+        "https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.39.0/apexcharts.min.js";
+      integrity =
+        "sha512-jZMUAHj0E1ZO8dGoWdvwCQ/bh4sefOi6lwM5XcjnpzyTfOc409SrdZAdbvum112UT1c/SqVSPZAzksUkxVcQ8w==";
+      crossorigin = "anonymous";
+      referrerpolicy = "no-referrer";
+    ></script>
+    <!-- JS -->
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
