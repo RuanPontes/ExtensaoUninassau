@@ -228,3 +228,46 @@ body {
   height: auto;
  
 }
+/* Estilo do botão para abrir o formulário */
+
+  .opiniao-button {
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto */
+    border: none; /* Remover borda */
+    padding: 10px 20px; /* Preenchimento interno do botão */
+    border-radius: 5px; /* Cantos arredondados */
+    cursor: pointer; /* Alterar o cursor ao passar o mouse sobre o botão */
+  }
+
+  .opiniao-button:hover {
+    background-color: #0056b3; /* Cor de fundo quando o mouse está sobre o botão */
+  }
+
+
+  .form-section {
+    text-align: center; /* Alinha o texto e o botão ao centro horizontalmente */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os elementos verticalmente */
+    justify-content: center; /* Centraliza os elementos horizontalmente */
+  
+    /* Opcional: Adicione margem superior e inferior para afastar do conteúdo acima e abaixo */
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para o botão */
+  .opiniao-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .opiniao-button:hover {
+    background-color: #0056b3;
+  }
+  
+

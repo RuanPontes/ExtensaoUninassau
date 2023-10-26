@@ -133,118 +133,64 @@ barChart.render();
 
 
 // AREA CHART
-var areaChartOptions = {
-  series: [{
-    name: "Exemplo 1",
-    data: [31, 40, 28, 51, 42, 109, 100],
-  }, {
-    name: "Exemplo 2",
-    data: [11, 32, 45, 32, 34, 52, 41],
-  }],
+var options = {
+  series: [
+    { name: "SIM", data: [2, 6, 6, 2] },
+    { name: "TALVEZ", data: [5, 6, 2, 4] },
+    { name: "NÃO", data: [6, 1, 5, 7] } 
+  ],
   chart: {
-    type: "area",
-    background: "transparent",
+    type: "bar",
     height: 350,
-    stacked: false,
     toolbar: {
       show: false,
     },
   },
-  colors: ["#00ab57", "#d50000"],
-  labels: ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul"],
+  plotOptions: {
+    bar: {
+      horizontal: false,
+      columnWidth: "55%",
+      endingShape: "rounded",
+    },
+  },
   dataLabels: {
     enabled: false,
   },
-  fill: {
-    gradient: {
-      opacityFrom: 0.4,
-      opacityTo: 0.1,
-      shadeIntensity: 1,
-      stops: [0, 100],
-      type: "vertical",
-    },
-    type: "gradient",
-  },
-  grid: {
-    borderColor: "#55596e",
-    yaxis: {
-      lines: {
-        show: true,
-      },
-    },
-    xaxis: {
-      lines: {
-        show: true,
-      },
-    },
-  },
-  legend: {
-    labels: {
-      colors: "#f5f7ff",
-    },
-    show: true,
-    position: "top",
-  },
-  markers: {
-    size: 6,
-    strokeColors: "#1b2635",
-    strokeWidth: 3,
-  },
   stroke: {
-    curve: "smooth",
+    show: true,
+    width: 2,
+    colors: ["transparent"],
   },
   xaxis: {
-    axisBorder: {
-      color: "#55596e",
-      show: true,
-    },
-    axisTicks: {
-      color: "#55596e",
-      show: true,
-    },
+    categories: ["Uso em sala", "Difícil inclusão", "Conhece IA?", "Explora IA?"],
     labels: {
-      offsetY: 5,
       style: {
-        colors: "#f5f7ff",
+        colors: "#ffffff",
       },
     },
   },
-  yaxis:
-    [
-      {
-        title: {
-          text: "Exemplo",
-          style: {
-            color: "#f5f7ff",
-          },
-        },
-        labels: {
-          style: {
-            colors: ["#f5f7ff"],
-          },
-        },
+  yaxis: {
+    labels: {
+      style: {
+        colors: "#ffffff",
       },
-      {
-        opposite: true,
-        title: {
-          text: "Exemplo",
-          style: {
-            color: "#f5f7ff",
-          },
-        },
-        labels: {
-          style: {
-            colors: ["#f5f7ff"],
-          },
-        },
-      },
-    ],
+    },
+  },
+  legend:{
+    labels:{
+      colors:"#ffffff"
+    }
+  },
   tooltip: {
-    shared: true,
-    intersect: false,
-    theme: "dark",
+    theme: 'dark'
   }
+  
 };
+
+var chart = new ApexCharts(document.querySelector("#chart"), options);
+chart.render();
+
+
 
 var areaChart = new ApexCharts(document.querySelector("#area-chart"), areaChartOptions);
 areaChart.render();
